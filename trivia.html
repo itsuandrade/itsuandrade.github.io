@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>IT-TRIVIA!</title>
+    </head>
+    <body>
+        <div class="main-page">
+            <header>
+                <div class="title">O quanto você sabe sobre o It?</div>
+                <div class="sub-title">Responda a essas simples perguntas e descubra!</div>
+                <div class="sub-sub-title">Se você acertar mais de 7, você sabe muito, parça!</div>
+            </header>
+            <!--PERGUNTAS-->
+            <section class="trivia">
+                <div class="question-container">
+                    <div class="question-name">
+                        Pergunta 1: Onde eu nasci?
+                    </div>
+                    <div id="question1" class="answer-container">
+                        <button id="cuiaba" class="answer-choice q1ans">Cuiabá - MT</button>
+                        <button id="curitiba" class="answer-choice q1ans">Curitiba - PR</button>
+                        <button id="brasilia" class="answer-choice q1ans">Brasília - DF</button>
+                        <button id="campo grande" class="answer-choice q1ans">Campo Grande - MS</button>
+                    </div>
+                    <div id="feed1" class="feedback"></div>
+                </div>
+                <div class="question-container">
+                    <div class="question-name">
+                        Pergunta 2: Quando eu faço aniversário?
+                    </div>
+                    <div id="question2" class="answer-container">
+                        <button id="28jun" class="answer-choice q1ans">28 de Junho</button>
+                        <button id="28jul" class="answer-choice q1ans">28 de Julho</button>
+                        <button id="31jun" class="answer-choice q1ans">31 de Junho</button>
+                        <button id="31jul" class="answer-choice q1ans">31 de Julho</button>
+                    </div>
+                    <div id="feed2" class="feedback"></div>
+                </div>
+                
+                <!--RESULTADO-->
+                <div class="final"> <span id="result">Agora vamos para o resultado!</span>
+                    <div class="score-container">
+                        <div id="scorePoints" class="score">X PONTOS</div>
+                        <div id="scoreFeedback" class="score-feedback">É ex-amigo...</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

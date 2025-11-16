@@ -1,0 +1,112 @@
+body {
+    height: 100vh;
+    overflow-x: hidden;
+    margin: 0;
+    background-color: rgb(70, 60, 160);
+}
+
+.main-page {
+    width: 80%;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: whitesmoke;
+    font-family: Helvetica;
+}
+
+header {
+    padding: 20px 0 50px 0;
+    color: rgb(54, 46, 128);
+    text-align: center;
+    font-size: 25px;
+}
+
+.title {
+    margin: 10px 0 10px 0;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.sub-title {
+    margin: 5px 0 5px 0;
+}
+
+.trivia {
+    width: 80%;
+    height: auto;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.question-container {
+    padding: 20px;
+    margin: 5px;
+    background-color: rgb(200,200,200);
+}
+
+.question-name {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.answer-container {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.answer-choice {
+    width: 400px;
+    height: 40px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    font-size: 18px;
+}
+
+.right-answer {
+    background-color: rgb(138, 218, 138);
+}
+
+.wrong-answer {
+    background-color: rgb(248, 149, 149);
+}
+
+.feedback {
+    text-align: center;
+}
+
+.final {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#result {
+}
+
+.score-container {
+    padding: 10px;
+    border: 3px solid rgb(70, 60, 160);
+    border-radius: 5px;
+    margin-top: 10px;
+    display: grid;
+    grid-template: "score feedback";
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+.score {
+    grid-area: score;
+}
+
+.score-feedback {
+    grid-area: feedback;
+}
